@@ -11,12 +11,12 @@ function promptPasswordChoices() {
 
     if (length > 128 || length < 8) {
         alert("Password must be less than 8 and and no greater than 128 characters.")
-        return false;
+        return;
     }
 
     if (isNaN(length) === true) {
         alert('Password length must be provided as a number');
-        return false;
+        return;
 
     }
 
@@ -63,6 +63,7 @@ function randomNumber(array) {
     var index = Math.floor(Math.random() * array.length);
     return array[index];
 }
+
 //function to generate password
 function generatePassword() {
 
@@ -70,6 +71,28 @@ function generatePassword() {
     const password = [];
     const possibleOptions = [];
     const guaranteedOptions = [];
+
+
+    //conditionals to add character arrays into possible options array and push new random characters to guaranteed options
+    if (choices.hasLowerCase) {
+        possibleOptions = possibleOptions.concat(lowerCase);
+        guaranteedOptions.push(randomNumber(lowerCase));
+    }
+
+    if (choices.hasUpperCase) {
+        possibleOptions = possibleOptions.concat(upperCase);
+        guaranteedOptions.push(randomNumber(upperCase));
+    }
+
+    if (choices.hasNumbers) {
+        possibleOptions = possibleOptions.concat(numbers);
+        guaranteedOptions.push(randomNumber(numbers));
+    }
+
+    if (choices.hasSpecialCharacters) {
+        possibleOptions = possibleOptions.concat(specialCharacters);
+        guaranteedOptions.push(randomNumber(specialCharacters));
+    }
 }
 
 // Assignment Code
