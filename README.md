@@ -34,18 +34,17 @@
   ## Screenshots 📷
 ---
 
-  |  random                              | random                               | random                               | 
-  |:------------------------------------------------------:|:------------------------------------------------------:|:------------------------------------------------------:|
-  | <img alt="placeholder" href="https://loremflickr.com/320/240" src="https://loremflickr.com/320/240" width="150" height="150"> |<img alt="placeholder" href="https://loremflickr.com/320/240" src="https://loremflickr.com/320/240" width="150" height="150">|<img alt="placeholder" href="https://loremflickr.com/320/240" src="https://loremflickr.com/320/240" width="150" height="150">|
-  |                                                        |                                                        |                                                        |
-  |                                                        |                                                        |                                                        |   
+  |  Application                              | 
+
+  | <img alt="placeholder" href="" src="./images/appScreenShot.PNG" width="150" height="150"> |
+                                                     
 
 
   ## Questions ❔
 
 ---
 
-  jerry.plotke@gmail.com<br />
+  Please send email to jerry.plotke@gmail.com<br />
   <br />
   :octocat: Find me on GitHub: [GPLOTKE](https://github.com/GPLOTKE)<br />
   <br />
