@@ -1,7 +1,3 @@
-//ReadME Generator
-const writeme = require('writemereadme')
-writeme.init();
-
 // list of lowercase letters, uppercase letters, numbers, and special characters that can be used in password.
 var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -10,16 +6,18 @@ var specialCharacters = ['!', '"', '#', '$', '%', '&', ')', '*', '+', ',', '-', 
 
 //function to prompt for length and type of characters
 function promptPasswordChoices() {
-    const length = prompt('Please enter your desired password length. Must be between 8 and 128 characters');
+    const length =
+        prompt('Please enter your desired password length. Must be between 8 and 128 characters');
 
     if (length > 128 || length < 8) {
         alert("Password must be less than 8 and and no greater than 128 characters.")
-        return;
+        return false;
     }
 
     if (isNaN(length) === true) {
         alert('Password length must be provided as a number');
-        return;
+        return false;
+
     }
 
     const hasLowerCase = confirm(
@@ -35,14 +33,42 @@ function promptPasswordChoices() {
     );
 
     const hasSpecialCharacters = confirm(
-        'Click OK to confirm including special characters.'
+        'Click OK to include special characters.'
     );
+
+    if (
+        hasLowerCase === false &&
+        hasUpperCase === false &&
+        hasNumbers === false &&
+        hasSpecialCharacters === false
+    ) {
+        alert('At least one character type must be selected');
+        return;
+    }
+
+    const passwordChoices = {
+        length: length,
+        hasLowerCase: hasLowerCase,
+        hasUpperCase: hasUpperCase,
+        hasNumbers: hasNumbers,
+        hasSpecialCharacters: hasSpecialCharacters
+    };
+
+    return passwordChoices;
 }
 
+
 //function to get random element
-
+function randomNumber(array) {
+    var index = Math.floor(Math.random() * array.length);
+    return array[index];
+}
 //function to generate password
+function generatePassword() {
 
+    const choices = promptPasswordChoices();
+    const password = [],
+}
 
 // Assignment Code
 // Get references to the #generate element
