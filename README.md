@@ -1,6 +1,66 @@
-# 03-Homework-JavaScript
 
-For this project we are t create a password generator that will prompt the user for the character length and whether or not they would like to include lowercase, uppercase, numbers and special characters. once these prompts are all confirmed then a password will be generated based on the users inputs. 
+  <h1 align="center">Javascript: Password Generator 🎉 </h1>
+    
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
+  
+  ## 👇  Description  👇
+---
+  
+  This application enables the user to generate random passwords base on the criteria that they've selected.
+ 
+  ## Table of Contents 
+  - [Description](#--description--)
+  - [Installation Instructions 📣](#installation-instructions-)
+  - [Usage 🖱️](#usage-️)
+  - [Contributors 🧑‍🤝‍🧑](#contributors-)
+  - [Screenshots 📷](#screenshots-)
+  - [Questions ❔](#questions-)
+  - [License ©️](#license-️)
+    
+  ## Installation Instructions 📣
+---
+
+  NA
+  
+  ## Usage 🖱️
+---
+
+  
+  
+  ## Contributors 🧑‍🤝‍🧑
+---
+  Gerald Plotke
+  
+  ## Screenshots 📷
+---
+
+  |  random                              | random                               | random                               | 
+  |:------------------------------------------------------:|:------------------------------------------------------:|:------------------------------------------------------:|
+  | <img alt="placeholder" href="https://loremflickr.com/320/240" src="https://loremflickr.com/320/240" width="150" height="150"> |<img alt="placeholder" href="https://loremflickr.com/320/240" src="https://loremflickr.com/320/240" width="150" height="150">|<img alt="placeholder" href="https://loremflickr.com/320/240" src="https://loremflickr.com/320/240" width="150" height="150">|
+  |                                                        |                                                        |                                                        |
+  |                                                        |                                                        |                                                        |   
+
+
+  ## Questions ❔
+
+---
+
+  jerry.plotke@gmail.com<br />
+  <br />
+  :octocat: Find me on GitHub: [GPLOTKE](https://github.com/GPLOTKE)<br />
+  <br />
+  📬 Email me with any questions: jerry.plotke@gmail.com<br /><br />
+  
+  ## License ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+---
+  <br />
+  This application is covered by <a href="https://opensource.org/licenses/MIT"> the MIT License</a> license. 
+
+  --------------------------- 
+ 
+
+  This README was generated with [writemeREADME](https://github.com/proto133/writemeREADME) 
+  
 
 Repository URL:
 https://github.com/GPLOTKE/03-Homework-JavaScript.git
