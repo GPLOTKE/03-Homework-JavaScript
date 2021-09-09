@@ -67,10 +67,10 @@ function randomNumber(array) {
 //function to generate password
 function generatePassword() {
 
-    const choices = promptPasswordChoices();
-    const password = [];
-    const possibleOptions = [];
-    const guaranteedOptions = [];
+    var choices = promptPasswordChoices();
+    var passwordResult = [];
+    var possibleOptions = [];
+    var guaranteedOptions = [];
 
 
     //conditionals to add character arrays into possible options array and push new random characters to guaranteed options
@@ -93,6 +93,19 @@ function generatePassword() {
         possibleOptions = possibleOptions.concat(specialCharacters);
         guaranteedOptions.push(randomNumber(specialCharacters));
     }
+
+    //for loops
+    for (var i = 0; i < choices.length; i++) {
+        var possibleOption = randomNumber(possibleOptions);
+
+        passwordResult.push(possibleOption);
+    }
+
+    for (var i = 0; i < guaranteedOptions.length; i++) {
+        passwordResult[i] = guaranteedOptions[i];
+    }
+
+    return passwordResult.join('');
 }
 
 // Assignment Code
