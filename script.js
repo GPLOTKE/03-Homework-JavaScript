@@ -67,7 +67,9 @@ function randomNumber(array) {
 function generatePassword() {
 
     const choices = promptPasswordChoices();
-    const password = [],
+    const password = [];
+    const possibleOptions = [];
+    const guaranteedOptions = [];
 }
 
 // Assignment Code
