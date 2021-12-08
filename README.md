@@ -62,7 +62,7 @@
   
 
 Repository URL:
-https://github.com/GPLOTKE/03-Homework-JavaScript.git
+https://github.com/GPLOTKE/03-Password-Generator
 
 Deployed Application URL:
 https://gplotke.github.io/03-Password-Generator/
